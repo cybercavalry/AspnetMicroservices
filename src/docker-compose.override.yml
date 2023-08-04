@@ -1,6 +1,12 @@
 version: '3.4'
 
 services:
+  managemongo:
+    container_name: managemongo
+    restart: always
+    ports:
+     - "3000:3000" 
+ 
   catalogdb:
     container_name: catalogdb
     restart: always
